@@ -61,7 +61,7 @@ vim.g.undotree_DiffCommand = "FC"
 vim.keymap.set("n", "q", vim.cmd.UndotreeToggle)
 
 require("nvim-treesitter.configs").setup({
-	ensure_installed = {"lua", "java"},
+	ensure_installed = {"lua", "java", "vim", "vimdoc", "markdown", "markdown_inline", "xml"},
 	sync_install = false,
 	auto_install = true,
 	highlight = {
