@@ -9,8 +9,8 @@ vim.g.mouse = 'm'
 vim.schedule(function()
 	vim.o.clipboard = "unnamedplus"
 end)
---Break indent
-vim.o.breakindent = true
+--No wrap
+vim.o.wrap = false
 --Sign column on
 vim.o.signcolumn = 'yes'
 --Update time and mapped sequence wait time
@@ -47,7 +47,7 @@ local pluginList = {
 	'mbbill/undotree',
 	"echasnovski/mini.statusline",
 	"folke/todo-comments.nvim",
-	"EdenEast/nightfox.nvim"
+	"rafamadriz/neon"
 }
 require("paq"):setup({})(pluginList)
 
@@ -72,5 +72,12 @@ require("nvim-treesitter.configs").setup({
 vim.keymap.set("n", "a", vim.cmd.TSPlaygroundToggle)
 
 require("mini.statusline").setup()
+--Theme
+vim.g.neon_style = "dark"
+vim.g.neon_italic_comment = true
+vim.g.neon_italic_keyword = true
+vim.g.neon_italic_boolean = true
+vim.g.neon_italic_function = true
+vim.g.neon_italic_variable = true
 
-vim.cmd[[colorscheme carbonfox]]
+vim.cmd[[colorscheme neon]]
