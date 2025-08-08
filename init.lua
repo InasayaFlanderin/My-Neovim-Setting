@@ -47,7 +47,8 @@ local pluginList = {
 	'mbbill/undotree',
 	"echasnovski/mini.statusline",
 	"folke/todo-comments.nvim",
-	"rafamadriz/neon"
+	"dasupradyumna/midnight.nvim",
+	"HiPhish/rainbow-delimiters.nvim"
 }
 require("paq"):setup({})(pluginList)
 
@@ -80,4 +81,4 @@ vim.g.neon_italic_boolean = true
 vim.g.neon_italic_function = true
 vim.g.neon_italic_variable = true
 
-vim.cmd[[colorscheme neon]]
+vim.cmd[[colorscheme midnight]]
