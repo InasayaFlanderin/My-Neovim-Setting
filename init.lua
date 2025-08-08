@@ -48,7 +48,8 @@ local pluginList = {
 	"echasnovski/mini.statusline",
 	"folke/todo-comments.nvim",
 	"dasupradyumna/midnight.nvim",
-	"HiPhish/rainbow-delimiters.nvim"
+	"HiPhish/rainbow-delimiters.nvim",
+	"cohama/lexima.vim"
 }
 require("paq"):setup({})(pluginList)
 
