@@ -61,7 +61,9 @@ vim.keymap.set('n', 'fg', builtin.live_grep)
 vim.keymap.set('n', 'fb', builtin.buffers)
 vim.keymap.set('n', 'fh', builtin.help_tags)
 
-vim.g.undotree_DiffCommand = "FC"
+require('todo-comments').setup()
+
+--vim.g.undotree_DiffCommand = "FC"
 vim.keymap.set("n", "q", vim.cmd.UndotreeToggle)
 
 require("nvim-treesitter.configs").setup({
