@@ -63,7 +63,7 @@ vim.keymap.set('n', 'fh', builtin.help_tags)
 
 require('todo-comments').setup()
 
---vim.g.undotree_DiffCommand = "FC"
+vim.g.undotree_DiffCommand = "FC"
 vim.keymap.set("n", "q", vim.cmd.UndotreeToggle)
 
 require("nvim-treesitter.configs").setup({
@@ -87,3 +87,4 @@ vim.g.neon_italic_function = true
 vim.g.neon_italic_variable = true
 
 vim.cmd[[colorscheme midnight]]
+
