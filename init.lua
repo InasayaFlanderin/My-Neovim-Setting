@@ -22,10 +22,12 @@ vim.opt.listchars = { tab = '»»', trail = '·', nbsp = ' ' }
 vim.o.cursorline = true
 --remap and plugin
 vim.keymap.set('n', 'i', 'a', { noremap = true })
-vim.keymap.set('n', 'e', ':Ex<CR>', { noremap = true })
+vim.keymap.set('n', 'g', ':Ex<CR>', { noremap = true })
+vim.keymap.set('n', 't', ':w', { noremap = true })
 vim.keymap.set('n', '<leader>d', 'yyp', { noremap = true })
+vim.keymap.set('n', 'm', ':q', { noremap = true })
 --Tabs
-vim.keymap.set('n', 'tt', ':tabnext<CR>', { noremap = true })
+vim.keymap.set('n', 'ta', ':tabnext<CR>', { noremap = true })
 vim.keymap.set('n', 'tn', ':tabnew<CR>', { noremap = true })
 vim.keymap.set('n', 'tp', ':tabprev<CR>', { noremap = true })
 --Splits
