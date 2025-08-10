@@ -51,9 +51,14 @@ local pluginList = {
 	"folke/todo-comments.nvim",
 	"dasupradyumna/midnight.nvim",
 	"HiPhish/rainbow-delimiters.nvim",
-	"cohama/lexima.vim"
+	"cohama/lexima.vim",
+	"Saghen/blink.cmp"
 }
 require("paq"):setup({})(pluginList)
+
+require("blink.cmp").setup({
+		fuzzy = { implementation = "lua" }
+})
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "ff", builtin.find_files)
@@ -87,4 +92,5 @@ vim.g.neon_italic_function = true
 vim.g.neon_italic_variable = true
 
 vim.cmd[[colorscheme midnight]]
+
 
